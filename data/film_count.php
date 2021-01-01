@@ -2,7 +2,7 @@
 
 header('Set-Cookie: SameSite=Strict;Content-Type: application/json;charset=utf-8');
 
-require_once './config/db.php';
+require_once '../config/db.php';
 
 // query
 
