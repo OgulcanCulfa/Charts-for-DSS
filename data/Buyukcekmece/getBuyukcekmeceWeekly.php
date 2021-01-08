@@ -6,7 +6,7 @@ require_once '../../config/db.php';
 
 // query
 
-$getDaily = "SELECT * FROM buyukcekmece ORDER BY id DESC LIMIT 8;";
+$getDaily = "SELECT * FROM buyukcekmece ORDER BY id DESC LIMIT 7;";
 
 
 function getCount($conn,$getDaily) {

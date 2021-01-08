@@ -6,7 +6,7 @@ require_once '../../config/db.php';
 
 // query
 
-$getWeekly = "SELECT * FROM beylikduzu ORDER BY id DESC LIMIT 8;";
+$getWeekly = "SELECT * FROM beylikduzu ORDER BY id DESC LIMIT 7;";
 
 
 function getCount($conn,$getWeekly) {
