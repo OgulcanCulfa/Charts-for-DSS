@@ -15,7 +15,7 @@ function MonthlyAvcilar() {
             const dat = new Date(Date.parse(t.created_At.replace(/-/g, '/')));
             return dat;
         });
-        console.log(datum);
+        
         
 
         $("#ay").html(`Avcılar İçin 

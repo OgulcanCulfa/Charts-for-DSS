@@ -12,8 +12,8 @@ function WeeklyAvcilar() {
             const dat = new Date(Date.parse(t.created_At.replace(/-/g, '/')));
             return dat;
         });
-        console.log(datum);
         
+        console.log(datum)
 
         $("#hafta").html(`Avcılar İçin 
         ${datum[datum.length-1].getDate()}-${datum[datum.length-1].getMonth()+1}-${datum[datum.length-1].getFullYear()} ve  

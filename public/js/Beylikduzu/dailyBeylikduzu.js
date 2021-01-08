@@ -9,7 +9,6 @@ function DailyBeylikduzu() {
     $.post('../data/Beylikduzu/getBeylikduzuDaily.php', function (data) {
                  
         const data2 = JSON.parse(data);
-        
         let datum = data2.map((t) => {     
             const dat = new Date(Date.parse(t.created_At.replace(/-/g, '/')));
             return dat;

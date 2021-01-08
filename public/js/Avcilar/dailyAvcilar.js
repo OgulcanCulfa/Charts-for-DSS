@@ -12,11 +12,13 @@ function DailyAvcilar() {
 
         const data2 = JSON.parse(data);
         
-        
+        console.log(data2)
         let datum = data2.map((t) => {     
             const dat = new Date(Date.parse(t.created_At.replace(/-/g, '/')));
             return dat;
         });
+
+        console.log(datum);
         
         
 

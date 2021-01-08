@@ -3,7 +3,7 @@
 <head>   
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beylikdüzü</title>
+    <title>Büyükçekmece</title>
     <!-- dropdown css import -->
     <!-- <link rel="stylesheet" href="public/css/dropdown.css" -->
     <!--bootstrap import-->
@@ -17,7 +17,7 @@
 
     <!-- Navbar starts -->
 
-    <nav class="row navbar fixed-top navbar-dark mb-5 bg-dark py-4">
+    <nav class="row navbar sticky-top navbar-dark mb-5 bg-dark py-4">
         
         <div class="col-md-3"> 
             <div class="dropdown">
@@ -27,13 +27,13 @@
                 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                     
                     <li class="dropdown-submenu">
-                        <a class="dropdown-item" tabindex="-1" href="Beylikduzu.php">Beylikdüzü</a>
+                        <a class="dropdown-item" tabindex="-1" href="Beylikduzu.html">Beylikdüzü</a>
                     </li>
                     <li class="dropdown-submenu">
-                        <a class="dropdown-item" tabindex="-1" href="Buyukcekmece.php">Büyükçekmece</a>
+                        <a class="dropdown-item" tabindex="-1" href="Buyukcekmece.html">Büyükçekmece</a>
                     </li>
                     <li class="dropdown-submenu">
-                        <a class="dropdown-item" tabindex="-1" href="Avcilar.php">Avcılar</a>
+                        <a class="dropdown-item" tabindex="-1" href="Avcilar.html">Avcılar</a>
                     </li>
                     
                 </ul>
@@ -63,7 +63,7 @@
 
         <!-- Graph div -->
 
-        <canvas class="my-5" id="gunlukbduzu" width="50" height="25" style="width: 50%; height: 50%"/>
+        <canvas class="my-5" id="gunlukbcekmece" width="50" height="25" style="width: 50%; height: 50%"/>
 
     </div>
 
@@ -72,16 +72,16 @@
     <div id="radioDiv" class="d-flex justify-content-center my-5">
         <div class="form-check form-check-inline justify-content-center">
 
-            <input class="form-check-input" type="radio" name="bduzugraphgunluk" checked onclick="DailyBeylikduzu()" value="pie">
+            <input class="form-check-input" type="radio" name="bcekmecegraphgunluk" checked onclick="DailyBuyukcekmece()" value="pie">
             <label class="form-check-label mr-3" for="pie">Pie Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphgunluk" onclick="DailyBeylikduzu()" value="bar">
+            <input class="form-check-input" type="radio" name="bcekmecegraphgunluk" onclick="DailyBuyukcekmece()" value="bar">
             <label class="form-check-label mr-3" for="bar">Bar Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphgunluk" onclick="DailyBeylikduzu()" value="line">
+            <input class="form-check-input" type="radio" name="bcekmecegraphgunluk" onclick="DailyBuyukcekmece()" value="line">
             <label class="form-check-label mr-3" for="line">Line Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphgunluk" onclick="DailyBeylikduzu()" value="radar">
+            <input class="form-check-input" type="radio" name="bcekmecegraphgunluk" onclick="DailyBuyukcekmece()" value="radar">
             <label class="form-check-label mr-3" for="radar">Radar Grafiği</label>
 
         </div>
@@ -101,7 +101,7 @@
 
         <!-- Graph div -->
 
-        <canvas class="my-5" id="haftalikbduzu" width="50" height="25" style="width: 50%; height: 50%"/>
+        <canvas class="my-5" id="haftalikbcekmece" width="50" height="25" style="width: 50%; height: 50%"/>
 
     </div>
 
@@ -110,16 +110,16 @@
     <div id="radioDiv" class="d-flex justify-content-center my-5">
         <div class="form-check form-check-inline justify-content-center">
 
-            <input class="form-check-input" type="radio" name="bduzugraphhaftalik" checked onclick="WeeklyBeylikduzu()" value="pie">
+            <input class="form-check-input" type="radio" name="bcekmecegraphhaftalik" checked onclick="WeeklyBuyukcekmece()" value="pie">
             <label class="form-check-label mr-3" for="pie">Pie Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphhaftalik" onclick="WeeklyBeylikduzu()" value="bar">
+            <input class="form-check-input" type="radio" name="bcekmecegraphhaftalik" onclick="WeeklyBuyukcekmece()" value="bar">
             <label class="form-check-label mr-3" for="bar">Bar Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphhaftalik" onclick="WeeklyBeylikduzu()" value="line">
+            <input class="form-check-input" type="radio" name="bcekmecegraphhaftalik" onclick="WeeklyBuyukcekmece()" value="line">
             <label class="form-check-label mr-3" for="line">Line Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphhaftalik" onclick="WeeklyBeylikduzu()" value="radar">
+            <input class="form-check-input" type="radio" name="bcekmecegraphhaftalik" onclick="WeeklyBuyukcekmece()" value="radar">
             <label class="form-check-label mr-3" for="radar">Radar Grafiği</label>
 
         </div>
@@ -128,10 +128,10 @@
 
     <hr>
 
-<!-- Weekly Data for Beylikduzu Ends -->
+<!-- Weekly Data for Buyukcekmece Ends -->
 
 
-<!-- Monthly Data for Beylikduzu Starts -->
+<!-- Monthly Data for Buyukcekmece Starts -->
 
 
 <div class="container justify-content-center my-5">
@@ -140,7 +140,7 @@
 
         <!-- Graph div -->
 
-        <canvas class="my-5" id="aylikbduzu" width="50" height="25" style="width: 50%; height: 50%"/>
+        <canvas class="my-5" id="aylikbcekmece" width="50" height="25" style="width: 50%; height: 50%"/>
 
     </div>
 
@@ -149,16 +149,16 @@
     <div id="radioDiv" class="d-flex justify-content-center my-5">
         <div class="form-check form-check-inline justify-content-center">
 
-            <input class="form-check-input" type="radio" name="bduzugraphaylik" checked onclick="MonthlyBeylikduzu()" value="pie">
+            <input class="form-check-input" type="radio" name="bcekmecegraphaylik" checked onclick="MonthlyBuyukcekmece()" value="pie">
             <label class="form-check-label mr-3" for="pie">Pie Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphaylik" onclick="MonthlyBeylikduzu()" value="bar">
+            <input class="form-check-input" type="radio" name="bcekmecegraphaylik" onclick="MonthlyBuyukcekmece()" value="bar">
             <label class="form-check-label mr-3" for="bar">Bar Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphaylik" onclick="MonthlyBeylikduzu()" value="line">
+            <input class="form-check-input" type="radio" name="bcekmecegraphaylik" onclick="MonthlyBuyukcekmece()" value="line">
             <label class="form-check-label mr-3" for="line">Line Grafiği</label>
 
-            <input class="form-check-input" type="radio" name="bduzugraphaylik" onclick="MonthlyBeylikduzu()" value="radar">
+            <input class="form-check-input" type="radio" name="bcekmecegraphaylik" onclick="MonthlyBuyukcekmece()" value="radar">
             <label class="form-check-label mr-3" for="radar">Radar Grafiği</label>
 
         </div>
@@ -167,7 +167,7 @@
 
     <hr>
 
-<!-- Monthly Data for Beylikduzu Ends -->
+<!-- Monthly Data for Buyukcekmece Ends -->
 
 
     
@@ -182,9 +182,9 @@
 
 <!-- JQuery -->
 
-<script src="../public/js/Beylikduzu/dailyBeylikduzu.js"></script>
-<script src="../public/js/Beylikduzu/weeklyBeylikduzu.js"></script>
-<script src="../public/js/Beylikduzu/monthlyBeylikduzu.js"></script>
+<script src="../public/js/Buyukcekmece/dailyBuyukcekmece.js"></script>
+<script src="../public/js/Buyukcekmece/weeklyBuyukcekmece.js"></script>
+<script src="../public/js/Buyukcekmece/monthlyBuyukcekmece.js"></script>
 
 
 

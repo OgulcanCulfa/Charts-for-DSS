@@ -12,7 +12,7 @@ function WeeklyBeylikduzu() {
             const dat = new Date(Date.parse(t.created_At.replace(/-/g, '/')));
             return dat;
         });
-        console.log(datum);
+        
         
 
         $("#hafta").html(`Beylikdüzü İçin 
