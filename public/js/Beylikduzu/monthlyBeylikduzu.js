@@ -32,6 +32,9 @@ function MonthlyBeylikduzu() {
         let chartdata = {
             labels: ["Bench","Squat Rack","Smith Machine","Treadmill","Exercise Bike","Leg Press"],
             datasets: [{
+                fill: false,
+                borderColor: "black",
+                borderWidth: 1,
                 label: "Alet Kullanım Oranları",
                 data: [bnch,sqt,smth,trd,bks,leg],
                 backgroundColor: [
