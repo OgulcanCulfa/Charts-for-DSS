@@ -37,7 +37,7 @@ function WeeklyAvcilar() {
                     'black',
                     'blue',
                     'pink',
-                    'dark gray',
+                    'rgba(233, 235, 107, 1)',
                     'green',
                     'red'
                 ]
