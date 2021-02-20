@@ -3,7 +3,7 @@ $(document).ready(function () {
 });
 
 
-// Daily Beylikduzu
+// Daily Avcılar
 
 function DailyAvcilar() {
     $.post('../data/Avcilar/getAvcilarDaily.php', function (data) {
